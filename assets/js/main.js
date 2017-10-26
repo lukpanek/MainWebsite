@@ -31,20 +31,20 @@ function toggleMenu() {
     var x = document.getElementById("navigation");
     if (x.className === "shown") {
         x.className = "hidden";
-        console.log("hidden");
+        Console.log("hidden");
     } else {
         x.className = "shown";
-        console.log("shown");
+        Console.log("shown");
     }
 }
 
 window.setInterval(function(){
-    d2 = new Date();
-    d1 = new Date(2001, 9, 13)
+    var d2 = new Date();
+    var d1 = new Date(2001, 9, 13);
     var diff = d2.getTime() - d1.getTime();
     $(".current-age").html(diff / (1000 * 60 * 60 * 24 * 365.25).toFixed(10));
 }, 100);
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+  $("[data-toggle=\"tooltip\"]").tooltip();
+});
