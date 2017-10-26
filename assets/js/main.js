@@ -1,17 +1,17 @@
 $(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#body');
-   var offset = startchange.offset();
+   var scrollStart = 0;
+   var startChange = $("#body");
+   var offset = startChange.offset();
    $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('#navigation').css('color', '#191919');
-          $('#navigation').css('background', '#fff');
-          $('ul#navigation li a').css('color', '#191919');
+      scrollStart = $(this).scrollTop();
+      if(scrollStart > offset.top) {
+          $("#navigation").css("color", "#191919");
+          $("#navigation").css("background", "#fff");
+          $("ul#navigation li a").css("color", "#191919");
        } else {
-          $('#navigation').css('color', '#fff');
-          $('ul#navigation li a').css('color', '#fff');
-          $('#navigation').css('background', 'transparent');
+          $("#navigation").css("color", "#fff");
+          $("ul#navigation li a").css("color", "#fff");
+          $("#navigation").css("background", "transparent");
        }
    });
 });
@@ -31,10 +31,10 @@ function toggleMenu() {
     var x = document.getElementById("navigation");
     if (x.className === "shown") {
         x.className = "hidden";
-        console.log('hidden');
+        console.log("hidden");
     } else {
         x.className = "shown";
-        console.log('shown');
+        console.log("shown");
     }
 }
 
