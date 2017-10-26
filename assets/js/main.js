@@ -31,10 +31,10 @@ function toggleMenu() {
     var x = document.getElementById("navigation");
     if (x.className === "shown") {
         x.className = "hidden";
-        Console.log("hidden");
+        console.log('hidden');
     } else {
         x.className = "shown";
-        Console.log("shown");
+        console.log('shown');
     }
 }
 
