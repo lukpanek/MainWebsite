@@ -1,17 +1,17 @@
 $(document).ready(function(){       
-   var scrollStart = 0;
-   var startChange = $("#body");
-   var offset = startChange.offset();
+   var scroll_start = 0;
+   var startchange = $('#body');
+   var offset = startchange.offset();
    $(document).scroll(function() { 
-      scrollStart = $(this).scrollTop();
-      if(scrollStart > offset.top) {
-          $("#navigation").css("color", "#191919");
-          $("#navigation").css("background", "#fff");
-          $("ul#navigation li a").css("color", "#191919");
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#navigation').css('color', '#191919');
+          $('#navigation').css('background', '#fff');
+          $('ul#navigation li a').css('color', '#191919');
        } else {
-          $("#navigation").css("color", "#fff");
-          $("ul#navigation li a").css("color", "#fff");
-          $("#navigation").css("background", "transparent");
+          $('#navigation').css('color', '#fff');
+          $('ul#navigation li a').css('color', '#fff');
+          $('#navigation').css('background', 'transparent');
        }
    });
 });
@@ -31,18 +31,20 @@ function toggleMenu() {
     var x = document.getElementById("navigation");
     if (x.className === "shown") {
         x.className = "hidden";
+        console.log('hidden');
     } else {
         x.className = "shown";
+        console.log('shown');
     }
 }
 
 window.setInterval(function(){
-    var d2 = new Date();
-    var d1 = new Date(2001, 9, 13);
+    d2 = new Date();
+    d1 = new Date(2001, 9, 13)
     var diff = d2.getTime() - d1.getTime();
     $(".current-age").html(diff / (1000 * 60 * 60 * 24 * 365.25).toFixed(10));
 }, 100);
 
 $(function () {
-  $("[data-toggle=\"tooltip\"]").tooltip();
-});
+  $('[data-toggle="tooltip"]').tooltip()
+})
