@@ -2,10 +2,13 @@
 
 /* Body a ostatní */
 
+* {
+  font-family: Cairo;
+}
+
 body {
   padding: 0px;
   margin: 0px;
-  font-family: Cairo !important;
 }
 
 .tooltip {
