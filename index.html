@@ -1,206 +1,175 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>  
-        <title>Liturkey / Domovská stránka</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="author" content="Lukáš Pánek">
-        <meta name="theme-color" content="#fe3d3e" />
-        <meta property="description" content="Osobní stránka jednoho člověka z blízkosti Liberce, který se zajímá o programovaní, hraní her, web design a grafiku. Studuje na SPŠSE a VOŠ Liberec a je to krocan...">
-        <meta property="og:url" content="https://liturkey.tk">
-        <meta property="og:locale" content="cs_CZ">
-        <meta property="og:title" content="Lukáš Pánek / Liturkey">
-        <meta property="og:description" content="Osobní stránka jednoho člověka z blízkosti Liberce, který se zajímá o programovaní, hraní her, web design a grafiku. Studuje na SPŠSE a VOŠ Liberec a je to krocan...">
-        <meta property="og:image" content="https://liturkey.tk/assets/images/logo_bg.jpg">
+  <head>  
+    <title>Liturkey / Domovská stránka</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Lukáš Pánek">
+    <meta name="theme-color" content="#fe3d3e" />
+    <meta name="description" content="Osobní stránka jednoho programátora, který se zajímá o web design, hraní her, programování a grafiku. Aktuálně studuje na SPŠSE a VOŠ Liberec. Aktuálně pracuje pro Indian a CraftManii.">
+    <meta property="og:url" content="https://liturkey.tk">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="Lukáš Pánek / Liturkey">
+    <meta property="og:title" content="Osobní stránka Lukáše Pánka">
+    <meta property="og:description" content="Osobní stránka jednoho programátora, který se zajímá o web design, hraní her, programování a grafiku. Aktuálně studuje na SPŠSE a VOŠ Liberec. Aktuálně pracuje pro Indian a CraftManii.">
+    <meta property="og:image" content="https://liturkey.tk/assets/images/og-image.png">
+    <meta property="og:type" content="website" />
 
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/social.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <link href="https://use.fontawesome.com/984fba8822.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 
-        <script src="https://use.fontawesome.com/984fba8822.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
-        <script type="text/javascript" src="assets/js/typed.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107187204-1"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/typed.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107187204-1"></script>
+    <script type="text/javascript" src="assets/js/main.js?ver=2"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)};
-            gtag('js', new Date());
-            gtag('config', 'UA-107187204-1');
-        </script>
-    </head>
-    <body>
-        <ul id="navigation" class="hidden">
-            <span class="title">LP <span class="beta-tag">Beta</span></span>
-            <div class="menu">
-                <li><a data-scroll="" data-options="{ "easing": "easeInQuad" }" href="#uvod">Úvod</a></li>
-                <li><a data-options="{ "easing": "easeInQuad" }" href="#kdo-jsem">Kdo jsem?</a></li>
-                <li><a data-options="{ "easing": "easeInQuad" }" href="#projekty">Projekty</a></li>
-                <li><a data-options="{ "easing": "easeInQuad" }" href="#kontakt">Sociální sítě</a></li>
-                <li class="right"><a href="https://github.com/Liturkey/MainWebsite">GitHub</a></li>
-                <li class="right">v0.1.2b pub</li>
-                <ul class="social-icons icon-flat list-unstyled list-inline center"> 
-                    <li><a href="https://facebook.com/Liturkey"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="http://open.spotify.com/user/lukaspanek5"><i class="fa fa-spotify"></i></a></li>
-                    <li><a href="https://instagram.com/liturkey"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/TenLiturkey"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://youtube.com/lukaspanek5"><i class="fa fa-youtube-play"></i></a></li>
-                </ul>
-            </div>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      gtag('config', 'UA-107187204-1');
+    </script>
+  </head>
+  <body>
+
+
+    <ul id="navigation" class="hidden">
+      <div class="logo"></div>
+      <div class="menu-icon" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
+      <div class="menu">
+        <li class="item"><a href="#uvod">Úvod</a></li>
+        <li class="item"><a href="#kdo-jsem">Kdo jsem?</a></li>
+        <li class="item"><a href="#projekty">Na čem pracuji?</a></li>
+        <li class="item"><a href="#kontakt">Kontakt</a></li>
+      </div>
+      <div class="right-menu">
+        <ul class="right"> 
+          <li class="text"><span><i>Sleduj mě i tady!</i> <span>👉</span></span></li>
+          <li class="icon"><a href="https://facebook.com/Liturkey" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li class="icon"><a href="http://open.spotify.com/user/lukaspanek5" target="_blank"><i class="fab fa-spotify"></i></a></li>
+          <li class="icon"><a href="https://twitter.com/TenLiturkey" target="_blank"><i class="fab fa-twitter"></i></a></li>
         </ul>
-        <i class="fa fa-bars menu" aria-hidden="true" onclick="toggleMenu()"></i>
-        <div id="uvod">
-            <div class="content">
-                <img src="assets/images/logo.png" alt="Logo" class="logo" />
-                <div class="text">
-                    <p class="title">Lukáš Pánek</p>
-                    <p class="subtitle">Jsem <span class="animated"></span>.</p>
-                </div>
-            </div>
+      </div>
+    </ul>
+
+
+    <div id="uvod">
+      <div class="content">
+        <img src="assets/images/logo.png" alt="Logo" class="logo" />
+        <div class="text">
+          <p class="title">Lukáš Pánek</p>
+          <p class="subtitle">Jsem <span class="animated">vývojář</span>.</p>
         </div>
-        <div id="body">
-            <div class="section" id="kdo-jsem">
-                <h1>Kdo jsem?</h1>
-                <h3>Základní informace o mé osobě.</h3>
-                <div class="row">
-                    <div class="col-6">
-                        <p class="paragraph-title">Základní informace</p>
-                        <p>Ahoj, já jsem Lukáš Pánek, přezdívaný také jako krocan. V současné době se zaobývám programováním, grafikou, tvorbou webů a hraním her. 
-                        Mezi mé nejoblíbenější „programovací“ jazyky patří HTML, CSS a JS. Nebojím se taky PHP a dalších jazyků. Aktuálně studuji na SPŠSE a VOŠ Liberec, obor technické lyceum. 
-                        Mohutnou část mých znalostí v IT jsem se naučil sám pomocí googlování. Nejradši hraju oddychové Indie videohry a plošinovky.
-                        Aktuálně pracuji na volné noze jako redaktor v Indianovi a jako moderátor na jednom z největších Minecraft serverů v ČR - CraftManii.</p>
-                        <br>
-                        <ul class="info">
-                            <li><b>Jméno:</b> Lukáš Pánek</li>
-                            <li><b>Přezdívky:</b> Krocan, Liturkey (IGN)</li>
-                            <li><b>Aktuální věk:</b> <span class="current-age"></span> let</li>
-                            <li><b>Datum narození:</b> 13.10.2001</li>
-                            <li><b>Bydliště:</b> Jedna vesnička poblíž Liberce :)</li>
-                            <li><b>Aktuální studium:</b> SPŠSE a VOŠ Liberec, obor technické lyceum (od roku 2017)</li>
-                            <li><b>Oblíbené předměty:</b> IKT, MAT, FYZ, ANJ</li>
-                            <li><b>Charakteristika:</b> Ambivert</li>
-                        </ul>
-                        <br>
-                        <p class="paragraph-title">Můj Spotify playlist</p>
-                        <iframe src="https://open.spotify.com/embed/user/lukaspanek5/playlist/38ZJDWVbaOfn6EwkzwlaE0" style="width: 100%; height: 200px;" frameborder="0" allowtransparency="true"></iframe>
-                    </div>
-                    <div class="col-6">
-                        <div class="timeline">
-                            <div class="item">
-                                <p class="title">Mé první spatření světa</p>
-                                <p class="date">13 <span>/</span> 10 <span>/</span> 2001</p>
-                                <p class="description">Den, kdy se krocan narodil. První den mého života a prvního objevení světa. Nejdůležitější den mého života.</p>
-                            </div>
-                            <div class="item">
-                                <p class="title">Minecraft servery</p>
-                                <p class="date">2013 <span>-</span> 2017</p>
-                                <p class="description">Období, ve kterém jsem se naučil nejvíce věcí. Díky vytváření Minecraft serverů a věcí kolem nich jsem se naučil programovat, vytvářet weby a také jsem objevil spoustu úžasných lidí. První období, které mě nakoplo do pořádné práce vývojáře. Začátky na různých vytvářečích webů, přestup na Wordpress a nyní již vlastní server a vlastní kód.</p>
-                            </div>
-                            <div class="item">
-                                <p class="title">Působení na CraftManii</p>
-                                <p class="date">15 <span>/</span> 04 <span>/</span> 2017 <span>-</span> Dnes</p>
-                                <p class="description">Období, ve kterém jsem působil na Minecraft serveru CraftMania. Ze začátku jako Helper, nyní již jako Moderátor Wiki. Další část života, která mi ukázala spoustu nových možností.</p>
-                            </div>
-                            <div class="item">
-                                <p class="title">Nástup do Indiana</p>
-                                <p class="date">09 <span>/</span> 06 <span>/</span> 2017 <span>-</span> Dnes</p>
-                                <p class="description">Splnění jednoho z mých snů, stát se členem Indiana a recenzovat hry. V Indianovi píšu s týmem písálků články na web, recenze her, novinky atd. Naučil jsme se pořádné komunikace s komunitou, částečně dabing a lepší písemné vyjadřování.</p>
-                            </div>
-                            <div class="item">
-                                <p class="title">SPŠSE a VOŠ Liberec</p>
-                                <p class="date">04 <span>/</span> 09 <span>/</span> 2017 <span>-</span> Dnes</p>
-                                <p class="description">Nástup na mojí novou střední školu. Spousta nových zkušeností, přátel, projektů a informací. Studuji první ročník technického lycea na Střední průmyslové škole strojní a elektrotechnické v Liberci.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="scroll">
+        <a data-options="{ "easing": "easeInQuad" }" href="#kdo-jsem"><p class="arrow"><i class="fa fa-arrow-down" aria-hidden="true"></i></p></a>
+        <p class="description">Pokračuj scrollováním dolů</p>
+      </div>
+    </div>
+    <div id="body">
+      <div class="section" id="projekty">
+        <div>
+          <h1>Na čem pracuji?</h1>
+          <h3>Portfolio aktuálních i historických projektů.</h3>
+        </div>
+        <div class="projects">
+          <div class="row">
+            <div class="col-sm indian">
+              <div class="overlay"></div>
+              <img src="assets/images/projects/ind-logo.png" class="logo" />
+              <div class="description">
+                <p class="title">Indian</p>
+                <p class="datum">2017 - současnost</p>
+              </div>
+              <ul>
+                <li>Hry</li>
+                <li>Články</li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fas fa-globe"></i></li>
+              </ul>
             </div>
-            <div class="section" id="projekty">
-                <h1>Projekty</h1>
-                <h3>Projekty, na kterých aktuálně pracuji.</h3>
-                <div class="row">
-                    <div class="col-6">
-                        <img src="assets/images/projects/indian.png" alt="Indian - Pořad o hrách" class="avatar" />
-                        <p class="title">Indian - Pořad o hrách</p>
-                        <p class="description">Nejrozšířenější herní pořad v České republice. Každodenní recenze, novinky, témata, TOP 5 nebo i 90 vteřin. V redakci Indiana pracuji hlavně na webu. Pišu články na web, které se poté dostávají k několika tisícové komunitě tohoto herního pořadu.</p>
-                        <ul class="social-icons icon-flat list-unstyled list-inline center"> 
-                            <li><a href="https://indian-tv.cz"><i class="fa fa-globe" data-toggle="tooltip" data-placement="top" title="Webová stránka"></i></a></li>
-                            <li><a href="https://www.facebook.com/indiantvcz"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a></li>
-                            <li><a href="https://discord.gg/indian"><i class="fa fa-comment" data-toggle="tooltip" data-placement="top" title="Discord"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <img src="assets/images/projects/craftmania.png" alt="CraftMania" class="avatar" />
-                        <p class="title">CraftMania</p>
-                        <p class="description">Jeden z největších Minecraft serverů v České a Slovenské republice. Poskytuje herní prostředí pro více jak 400 hráčů denně. V současné době moderuji Wiki a webovou stránku tohoto projektu. Dříve jsem fungoval na pozici Helpera, který pomáhal hráčům.</p>
-                        <ul class="social-icons icon-flat list-unstyled list-inline center"> 
-                            <li><a href="https://craftmania.cz"><i class="fa fa-globe" data-toggle="tooltip" data-placement="top" title="Webová stránka"></i></a></li>
-                            <li><a href="https://www.facebook.com/craftmaniacz/"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a></li>
-                            <li><a href="https://discord.gg/craftmania"><i class="fa fa-comment" data-toggle="tooltip" data-placement="top" title="Discord"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="kontakt">
-                <h1>Sociální sítě</h1>
-                <h3>Nejlepší způsob jak mě kontaktovat! </h3>
-                <ul class="social-icons icon-flat list-unstyled list-inline"> 
-                    <li><a href="https://facebook.com/Liturkey"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a></li>
-                    <li><a href="http://open.spotify.com/user/lukaspanek5"><i class="fa fa-spotify" data-toggle="tooltip" data-placement="top" title="Spotify"></i></a></li>
-                    <li> <a href="https://github.com/liturkey"><i class="fa fa-github-alt" data-toggle="tooltip" data-placement="top" title="Github"></i></a></li>
-                    <li> <a href="https://soundcloud.com/Liturkey"><i class="fa fa-soundcloud" data-toggle="tooltip" data-placement="top" title="SoundCloud"></i></a></li>
-                    <li> <a href="https://twitch.tv/liturkey"><i class="fa fa-twitch" data-toggle="tooltip" data-placement="top" title="Twitch"></i></a></li>
-                    <li><a href="https://instagram.com/liturkey"><i class="fa fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a></li>
-                    <li> <a href="https://twitter.com/TenLiturkey"><i class="fa fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a></li>
-                    <li> <a href="https://youtube.com/lukaspanek5"><i class="fa fa-youtube-play" data-toggle="tooltip" data-placement="top" title="YouTube"></i></a></li>
-                    <li> <a href="https://www.reddit.com/user/Liturkey"><i class="fa fa-reddit" data-toggle="tooltip" data-placement="top" title="Reddit"></i></a></li>
-                    <li> <a href="http://steamcommunity.com/id/Liturkey/"><i class="fa fa-steam" data-toggle="tooltip" data-placement="top" title="Steam"></i></a></li> 
+            <div class="col-sm craftmania">
+              <div class="overlay"></div>
+              <div class="description">
+                <img src="assets/images/projects/cm-logo.png" class="logo" />
+                <p class="title">CraftMania</p>
+                <p class="datum">2017 - současnost</p>
+              </div>
+              <ul>
+                  <li>Vývoj</li>
+                  <li>Minecraft</li>
+                  <li><i class="fab fa-facebook"></i></li>
+                  <li><i class="fab fa-discord"></i></li>
+                  <li><i class="fas fa-globe"></i></li>
                 </ul>
             </div>
-        </div>
-        <div id="footer">
-            <div class="content">
-                <div class="left">
-                    <img src="assets/images/logo.png" alt="Logo" class="logo" />
+            <div class="col-sm kettu">
+                <div class="overlay"></div>
+                <div class="description">
+                  <img src="assets/images/projects/kettu-logo.png" class="logo" />
+                  <p class="title">Kettu</p>
+                  <p class="datum">V přípravě</p>
                 </div>
-                <div class="right">
-                    <ul>
-                        <li><b>Moje projekty</b></li>
-                        <li><a href="https://indian-tv.cz">Indian</a></li>
-                        <li><a href="https://craftmania.cz">CraftMania</a></li>
-                        <li><a href="https://pslib.cz">SPŠSE a VOŠ Liberec</a></li>
-                        <li><a href="https://github.com/Liturkey/MainWebsite">Zdrojový kód webu</a></li>
-                    </ul>
-                    <ul>
-                        <li><b>Spojení se mnou</b></li>
-                        <li><a href="https://facebook.com/Liturkey">Discord</a></li>
-                        <li><a href="https://facebook.com/Liturkey">Facebook</a></li>
-                        <li><a href="https://twitter.com/TenLiturkey">Twitter</a></li>
-                        <li><a href="https://instagram.com/liturkey">Instagram</a></li>
-                        <li><a href="mailto:lukaspanek5@gmail.com">E-mail</a></li>
-                    </ul>
-                    <ul>
-                        <li><b>Pro průmkaře</b></li>
-                        <li><a href="https://pslib.cz/lukas.panek">Můj školní web</a></li>
-                        <li><a href="https://web.pslib.cz/pro-studenty/rozvrh">Rozvrhy</a></li>
-                        <li><a href="https://pslib.cz/rodice">Bakaláři</a></li>
-                        <li><a href="https://gmail.pslib.cz">Školní Google Apps</a></li>
-                        <li><a href="http://safeq.pslib.cz:81">Tisk server (VPN)</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
                 <ul>
-                    <li>&copy; Lukáš Pánek 2017</li>
-                    <li>Vytvořeno s <i class="fa fa-heart" style="color: #ef4747;" aria-hidden="true"></i> pod licencí <a href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons BY-ND</a>.</li>
-                    <li><a href="https://github.com/Liturkey/MainWebsite">GitHub</a></li>
-                </ul>
-            </div>
+                    <li>Vývoj</li>
+                    <li>Discord</li>
+                  </ul>
+              </div>
+          </div>
         </div>
-    </body>
+      </div>
+      <div class="section" id="discord">
+        <p class="title">Používáš Discord? Připoj se na můj server!</p>
+        <p class="subtitle">Nejnovější novinky, programování a zábava na jednom místě.</p>
+        <a class="button" href="https://discord.gg/S55NZXU" target="_blank">Můj Discord server</a>
+      </div>   
+    </div>
+    <div id="footer">
+      <div class="content">
+        <div class="left">
+          <img src="assets/images/logo.png" alt="Logo" class="logo" />
+        </div>
+        <div class="right">
+          <ul>
+            <li><b>Moje projekty</b></li>
+            <li><a href="https://indian-tv.cz">Indian <span class="emoji">🎮</span></a></li>
+            <li><a href="https://craftmania.cz">CraftMania <span class="emoji">🌎</span></a></li>
+            <li><a href="https://pslib.cz">SPŠSE a VOŠ Liberec <span class="emoji">🎒</span></a></li>
+            <li><a href="https://github.com/Liturkey/MainWebsite">Zdrojový kód webu <span class="emoji">🖥️</span></a></li>
+          </ul>
+          <ul>
+            <li><b>Spojení se mnou</b></li>
+            <li><a href="https://facebook.com/Liturkey">Discord <span class="emoji">💎</span></a></li>
+            <li><a href="https://facebook.com/Liturkey">Facebook <span class="emoji">💩</span></a></li>
+            <li><a href="https://twitter.com/TenLiturkey">Twitter <span class="emoji">🐦</span></a></li>
+            <li><a href="https://instagram.com/liturkey">Instagram <span class="emoji">🖼️</span></a></li>
+            <li><a href="mailto:lukaspanek5@gmail.com">E-mail <span class="emoji">✉️</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <ul>
+          <p>Vytvořil Lukáš Pánek s ❤️ a se spoustou ☕.</p>
+          <li>Web je pod licencí <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a></li>
+          <li><a href="https://github.com/Liturkey/MainWebsite">Zdrojový kód (GitHub)</a></li>
+          <p class="copy-text">&copy; Lukáš Pánek 2018 - Verze 0.1.3</p>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+		  	easing: 'ease-out-back',
+		  	duration: 1000
+      });
+    </script>
+  </body>
 </html>
