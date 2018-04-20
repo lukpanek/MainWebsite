@@ -46,6 +46,7 @@ ul#navigation .icon {
   opacity: 0.7;
   transition-duration: 250ms;
   cursor: pointer;
+  z-index: 2;
 }
 
 ul#navigation .icon:hover {
@@ -55,6 +56,9 @@ ul#navigation .icon:hover {
 ul#navigation .menu {
   float: left;
   padding: 12px 30px;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  position: relative;
 }
 
 ul#navigation li {
@@ -110,6 +114,7 @@ ul#navigation a:hover {
 @media (max-width: 500px) {
   ul#navigation {
     padding: 0;
+    height: 50px;
   }
   ul#navigation .logo {
     width: 100%;
@@ -127,6 +132,9 @@ ul#navigation a:hover {
   }
   ul#navigation .menu {
     padding: 0;
+    padding-top: 50px;
+    background: #1F2021;
+    z-index: 1;
   }
   ul#navigation li {
     display: block;
@@ -135,7 +143,6 @@ ul#navigation a:hover {
     padding: 20px 30px;
     width: 100%;
     border-bottom: 1px solid #45484b;
-    background: #1F2021;
     overflow: hidden;
   }
   ul#navigation li svg {
@@ -145,6 +152,13 @@ ul#navigation a:hover {
     width: 100%;
     height: 100%;
     display: block;
+  }
+  ul#navigation.shown .menu {
+    top: -50px;
+  }
+
+  ul#navigation.hidden .menu {
+    top: -360px;
   }
 }
 
@@ -156,6 +170,7 @@ div#header {
   background: #131314;
   position: relative;
   margin-bottom: 140px;
+  padding-top: 70px;
 }
 
 div#header:after {
@@ -167,4 +182,46 @@ div#header:after {
   bottom: -140px;
   background: url('../images/sections/vlnka-1.png') no-repeat;
   background-size: contain;
+}
+
+div#header .content {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 0; right: 0; top: 60px; bottom: 0;
+  margin: auto;
+}
+
+div#header .content .logo {
+  width: 200px;
+  margin: 0 50px;
+}
+
+div#header .content .text {
+  margin: auto;
+  height: 50px;
+  position: relative;
+  text-align: center;
+}
+
+div#header .content p {
+  line-height: 80%;
+  color: #fff;
+}
+
+div#header .content .title {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: 'Barlow Semi Condensed', sans-serif;  
+}
+
+div#header .content .subtitle {
+  font-size: 28px;
+  transition-duration: 100ms;
+  font-weight: 400;
+}
+
+div#header .content .animated {
+  color: #fe3d3e;
+  position: relative;  
 }

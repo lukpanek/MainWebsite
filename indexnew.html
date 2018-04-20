@@ -34,8 +34,8 @@
     </script>
   </head>
   <body>
-    <ul id="navigation">
-      <div class="icon">
+    <ul id="navigation" class="hidden">
+      <div class="icon" onclick="toggleMenu();">
         <i class="fas fa-bars"></i>
       </div>
       <div class="logo">
@@ -50,7 +50,13 @@
       </div>
     </ul>
     <div id="header">
-      
+      <div class="content">
+        <img src="assets/images/logo.png" alt="Logo" class="logo" />
+        <div class="text">
+          <p class="title">Lukáš Pánek</p>
+          <p class="subtitle">Jsem <span class="animated">vývojář</span>.</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

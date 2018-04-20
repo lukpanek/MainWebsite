@@ -24,13 +24,8 @@ window.setInterval(function(){
 
 function toggleMenu() {
     var x = document.getElementById("navigation");
-    if (x.className === "shown") {
-        x.className = "hidden";
-        $('#navigation').css('width', '60px !important');
-    } else {
-        x.className = "shown";
-        $('#navigation').css('width', '100% !important');
-    }
+    if (x.className === "shown") { x.className = "hidden" } 
+    else { x.className = "shown"; }
 }
 
 window.setInterval(function(){
