@@ -1,31 +1,39 @@
-/*
+$(document).ready(function(){       
+   var scrollStart = 0;
+   var startChange = $("#body");
+   var offset = startChange.offset();
+   $(document).scroll(function() { 
+      scrollStart = $(this).scrollTop();
+      if(scrollStart > offset.top) {
+          $("#navigation").css("color", "#191919");
+          $("#navigation").css("background", "#fff");
+          $("ul#navigation li a").css("color", "#191919");
+       } else {
+          $("#navigation").css("color", "#fff");
+          $("ul#navigation li a").css("color", "#fff");
+          $("#navigation").css("background", "transparent");
+       }
+   });
+});
 
-    Lukáš Pánek - Hlavní JS soubor
-
-*/
-
-var stringsNew = ["vývojář", "krocan", "šílenec", "student", "redaktor", "hráč"];
-window.setInterval(function(){
-    var result = Math.floor((Math.random() * stringsNew.length) + 0);
-    while (stringsNew[result] == $('.animated').text()) {
-        var result = Math.floor((Math.random() * stringsNew.length) + 0);
-    }
-    $('.animated').animate({
-        opacity: 0,
-        top: "10px"
-    }, 250, function() {
-        $(".animated").css('top', '-10px');
-        $(".animated").text(stringsNew[result]).animate({
-            opacity: 1,
-            top: "0px"
-        }, 250);
+var strings = ["vývojář^1000", "krocan^1000", "šílenec^1000", "student^1000", "redaktor^1000", "hráč^1000"];
+$(function(){
+    $(".animated").typed({
+        strings: strings,
+        typeSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+        shuffle: true
     });
-}, 3000);
+});
 
 function toggleMenu() {
     var x = document.getElementById("navigation");
-    if (x.className === "shown") { x.className = "hidden" } 
-    else { x.className = "shown"; }
+    if (x.className === "shown") {
+        x.className = "hidden";
+    } else {
+        x.className = "shown";
+    }
 }
 
 window.setInterval(function(){
