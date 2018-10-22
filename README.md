@@ -1,14 +1,8 @@
-# Hlavní webová stránka
-Aktuálně se jedná o DEV verzi nového webu https://liturkey.tk, na kterém chci prezentovat svojí práci a umožnit lidem získat více informací o mě.
+# MainWebsite v 1.0
+Stará verze mé webové stránky, která byla vytvořena v roce 2016. Nyní je zveřejněna jako free-to-use projekt pod MIT licencí (tzn. můžeš upravovat souce code, používat na svém webu, ale musíš uvést autora s odkazem na mojí webovou stránku, prosím :D)
 
-## Plány
-* Nová color paleta
-* Upraven header (nebude fullscreen, pouze na část obrazovky)
-* Dividers mezi sekcemi budou více detailnější (vlnky atd.) -> SVG soubory
-* Navigace, která bude průhledná (logo vlevo, beta tag)
-* Sekce o mně - vertikální slider s informacemi, žádný background, inkonky u titlu, text align vlevo (?)
-* Sekce o projektech - malé obdelníčky uprostřed obrazovky, zakulacené, border pár pixelů
-* Sekce se sociálními sítěmi - ikonky na nejdůležitější stránky
+## Soubory
+Vše je jedna jediná stránka. Všechny assety jsou dostupné v `/assets` složce, kde jsou poté rozdělené jednotlivé typy souborů.
 
 ## Licence
-Webová stránka je vytvořena pod licencí [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). Více informací v souboru `LICENSE` nebo na odkazu výše.
+Webová stránka je vytvořena pod licencí [MIT](https://choosealicense.com/licenses/mit/). Více informací v souboru `LICENSE` nebo na odkazu výše. Šíření upraveného kódu je povoleno pod uvedením autora a odkazu na webovou stránku (https://liturkey.eu).
