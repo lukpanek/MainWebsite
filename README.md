@@ -1,5 +1,5 @@
 # MainWebsite v 1.0
-Stará verze mé webové stránky, která byla vytvořena v roce 2016. Nyní je zveřejněna jako free-to-use projekt pod MIT licencí (tzn. můžeš upravovat souce code, používat na svém webu, ale musíš uvést autora s odkazem na mojí webovou stránku, prosím :D)
+Stará verze mé webové stránky, která byla vytvořena v roce 2016. Nyní je zveřejněna jako free-to-use projekt pod MIT licencí (tzn. můžeš upravovat souce code, používat na svém webu, ale musíš uvést autora s odkazem na mojí webovou stránku, prosím :D). Nyní zastaralá verze.
 
 ## Soubory
 Vše je jedna jediná stránka. Všechny assety jsou dostupné v `/assets` složce, kde jsou poté rozdělené jednotlivé typy souborů.
